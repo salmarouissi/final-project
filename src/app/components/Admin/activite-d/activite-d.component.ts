@@ -59,9 +59,9 @@ export class ActiviteDComponent implements OnInit {
   }
 
   onDeleteP(index: number): void {
+    const confirmation = window.confirm('Are you sure about deleting this person?');
     if (index >= 0 && index < this.act.equipe.length) {
         const deletedMember = this.act.equipe.splice(index, 1)[0];
-
         this.actionSService.updateActivite(this.idActivite, this.act).subscribe(
             updatedActivite => {
                 console.log('Activity updated:', updatedActivite);

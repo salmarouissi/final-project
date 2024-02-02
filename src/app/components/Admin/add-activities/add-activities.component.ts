@@ -24,7 +24,7 @@ export class AddActivitiesComponent implements OnInit{
       name:[''],
       technology:[''],
       description:[''],
-      image : ['assets/images/layout_img/g1.jpg'],
+      image : ['assets/images/activite/activite.jpg'],
       equipe:this.formBuilder.array([])
     })
 
